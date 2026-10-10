@@ -9,6 +9,8 @@ IMPORTANT:
 - Use GitHub Pages.
 - Keep the design warm, cozy, clean, minimal, editorial.
 - Use cream, beige, taupe, brown, lots of light space, serif headings, simple body text, large images, and understated borders.
+- Main page titles use the centered, normal serif style of Chores, with a consistent font size across pages.
+- Section titles use the shared section-title style: centered italic brown serif text with thin divider lines on both sides, matching Monthly Chore Calendar. Preserve heading wording and case; keep the existing home intro columns and original image artwork.
 - Do not use purple unless I explicitly ask.
 
 SITE NAVIGATION:
