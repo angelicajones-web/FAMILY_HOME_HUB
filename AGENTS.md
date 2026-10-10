@@ -98,7 +98,7 @@ Chore Information:
   Punishments
   Punishment Reset
   Bedroom Reset
-- Desktop/tablet: 2x2
+- Desktop/tablet: 2x2 with matching visible poster heights; preserve all artwork using contained images.
 - Phone: stack vertically
 
 Additional Chores:
@@ -109,6 +109,7 @@ Additional Chores:
 
 GRAB & GO PAGE:
 Display exactly four finished menu images:
+Use matching visible poster heights on desktop/tablet. Preserve complete images; on phones, stack them at their natural full-width proportions.
 1. Heat & Eat
 2. Make It Yourself
 3. Breakfast Anytime
