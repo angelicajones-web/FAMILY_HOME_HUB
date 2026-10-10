@@ -57,10 +57,11 @@ ul { padding: 0; margin: 0; list-style: none; }
 .button:hover { background: var(--accent); color: white; border-color: var(--accent); }
 .button-secondary { background: transparent; color: var(--ink); }
 .resource-message { font-size: .9375rem; color: var(--muted); margin-top: .8rem; max-width: 32rem; }
-.pdf-viewer { width: 100%; height: 760px; height: clamp(360px, 75vw, 760px); display: block; border: 1px solid var(--line); background: var(--panel); margin-bottom: 1rem; }
-#calendar-title { margin-bottom: 1.4rem; }
-.additional-chores { border-top: 1px solid var(--line); padding-top: 2.5rem; }
-.additional-chores h2 { font-family: var(--sans); font-size: .875rem; font-weight: 600; letter-spacing: .16em; margin-bottom: 1.25rem; }
+.chores-page .page-heading { text-align: center; }
+.chores-page .chore-section-heading { display: flex; align-items: center; justify-content: center; gap: clamp(.75rem, 3vw, 2rem); margin-bottom: 1.75rem; color: var(--accent); font-style: italic; text-align: center; letter-spacing: -.015em; }
+.chores-page .chore-section-heading::before, .chores-page .chore-section-heading::after { content: ""; flex: 1; max-width: 9rem; min-width: 1rem; height: 1px; background: var(--line); }
+.chores-page .additional-chores { border-top: 1px solid var(--line); padding-top: 2.5rem; text-align: center; }
+.chores-page .additional-chores .button { letter-spacing: .03em; padding: .9rem 2rem; }
 .how-to-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .how-to-columns h2 { margin-bottom: 1.1rem; }
 .guide-list li { border-bottom: 1px solid var(--line); }

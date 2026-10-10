@@ -2,15 +2,15 @@
 
 A simple, responsive family website for meals, chores, Grab & Go menus, household information, family instructions, and shared-space reminders. The seven pages follow the approved blueprint in `AGENTS.md`.
 
-The first version includes **19 clearly labeled image placeholders and two placeholder PDFs**. They are preview assets, not the family's finished content. The two Google resources and future How-To guides show a coming-soon message until their links are supplied.
+The laundry schedule, duties, chore information, menus, and shared-space posters now use the family's supplied artwork. The family photo, food calendar, monthly chore calendar, and Additional Chores PDF still use labeled placeholders. The Google resources and future How-To guides show a coming-soon message until their links are supplied.
 
 ## Project files
 
-- `site/` contains the complete website and is the only folder published.
-- `site/assets/styles.css` controls the shared design.
-- `site/assets/site.js` controls the phone menu and unavailable-resource messages.
-- `site/assets/resources.js` contains the Google and How-To links.
-- `.github/workflows/pages.yml` publishes `site/` to GitHub Pages.
+- `FAMILY_HOME_HUB/` contains the complete website and is the only folder published.
+- `FAMILY_HOME_HUB/assets/styles.css` controls the shared design.
+- `FAMILY_HOME_HUB/assets/site.js` controls the phone menu and unavailable-resource messages.
+- `FAMILY_HOME_HUB/assets/resources.js` contains the Google and How-To links.
+- `.github/workflows/pages.yml` publishes `FAMILY_HOME_HUB/` to GitHub Pages.
 - `scripts/serve.mjs` starts an optional local preview.
 - `work/` contains initial authoring helpers and PDF preview images; it is not published. The website runs directly from the saved HTML files and does not need these helpers.
 
@@ -18,7 +18,7 @@ No installation, package dependencies, or build step is required for the website
 
 ## View the website
 
-Open `site/index.html` in a browser, or use an HTTP preview with Node.js:
+Open `FAMILY_HOME_HUB/index.html` in a browser, or use an HTTP preview with Node.js:
 
 ```powershell
 node .\scripts\serve.mjs
@@ -32,12 +32,13 @@ Then open `http://127.0.0.1:4173`. Stop the preview with Ctrl+C. If Node is not 
 
 ## Replace the preview images
 
-Save the finished file in `site/assets/images/` using the exact filename below. Replace the existing placeholder file. Keep the extension and file format consistent: JPEG for the family photo and PNG for the remaining images. No HTML changes are needed for replacements. Images display in their original colors and full proportions.
+Save the finished file in `FAMILY_HOME_HUB/assets/images/` using the exact filename below. Replace the existing placeholder file. Keep the extension and file format consistent: JPEG for the family photo and PNG for the remaining images. No HTML changes are needed for replacements. Images display in their original colors and full proportions.
 
 | Image | Stable filename |
 | --- | --- |
 | Family Photo | `family-photo.jpg` |
 | Jazz's Food Calendar | `jazz-food-calendar.png` |
+| Monthly Chore Calendar | `chore-calendar.png` |
 | Laundry Schedule | `laundry-schedule.png` |
 | Duty 1 | `duty-1.png` |
 | Duty 2 | `duty-2.png` |
@@ -58,20 +59,17 @@ Save the finished file in `site/assets/images/` using the exact filename below. 
 
 Around the 10th of each month, replace `jazz-food-calendar.png` with the new calendar. The same path remains in use.
 
-## Replace the PDFs
+Replace `chore-calendar.png` each month with the new chore calendar picture. Keep this exact filename rather than adding a month to it. The Chores page displays the picture directly, with no PDF viewer or editing link. Refresh the preview after replacing it.
 
-Replace these files in `site/assets/documents/` with finished PDFs:
+## Replace the Additional Chores PDF
 
-- `chore-calendar.pdf`: embedded monthly chore calendar, plus an open-in-new-tab fallback.
-- `additional-chores.pdf`: opened by the Additional Chores button.
+Replace `FAMILY_HOME_HUB/assets/documents/additional-chores.pdf` with the finished PDF. The single Additional Chores button opens it in a new tab.
 
-Use the same filename for the monthly chore calendar. Its page link and embedded viewer update together.
-
-PDF embedding depends on the browser's PDF viewer. If the frame is blank in the in-app preview or on a phone, use **OPEN CHORE CALENDAR** to open the PDF directly.
+The old `chore-calendar.pdf` placeholder is no longer used by the website.
 
 ## Connect the Google and How-To resources
 
-Edit `site/assets/resources.js`. Paste each URL inside the matching empty quotes:
+Edit `FAMILY_HOME_HUB/assets/resources.js`. Paste each URL inside the matching empty quotes:
 
 ```javascript
 foodInventory: 'https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit',
@@ -92,7 +90,7 @@ The target repository is [angelicajones-web/FAMILY_HOME_HUB](https://github.com/
 4. Commit the website files. Check the **Actions** tab for the Publish Family Home Hub run. You can also run it manually through **Run workflow**.
 5. Open **Settings → Pages → Visit site** after deployment succeeds.
 
-Subsequent image, PDF, or website changes committed to the default branch publish automatically. The workflow publishes only `site/`; project instructions and scratch files are excluded.
+Subsequent image, PDF, or website changes committed to the default branch publish automatically. The workflow publishes only `FAMILY_HOME_HUB/`; project instructions and scratch files are excluded.
 
 GitHub Pages sites normally have a public URL. Check the family content and linked-resource access settings before publishing. A private repository alone does not make a standard Pages site private.
 
@@ -103,8 +101,8 @@ Official references: [GitHub Pages publishing sources](https://docs.github.com/e
 There is no build or lint step. JavaScript syntax can be checked with:
 
 ```powershell
-node --check .\site\assets\site.js
-node --check .\site\assets\resources.js
+node --check .\FAMILY_HOME_HUB\assets\site.js
+node --check .\FAMILY_HOME_HUB\assets\resources.js
 node --check .\scripts\serve.mjs
 ```
 

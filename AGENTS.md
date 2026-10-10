@@ -71,15 +71,18 @@ CHORE PAGE ORDER — DO NOT CHANGE:
 5. Additional Chores
 
 Monthly Chore Calendar:
-- Display chore-calendar.pdf directly using a responsive iframe.
-- Include a clickable fallback link/button:
-  OPEN CHORE CALENDAR
-- The PDF will be replaced monthly using the same filename.
+- Display `assets/images/chore-calendar.png` as a responsive image, preserving its full proportions.
+- Use a labeled image placeholder until the user replaces it.
+- The user chose monthly image replacement rather than an editable-calendar link. Do not add a PDF viewer or an edit button.
+- Keep the same filename when replacing the calendar each month.
+- Center and style the heading with warm serif typography and subtle divider lines.
 
 Laundry Schedule:
 - Display as an image.
+- Do not add a separate visible heading; the artwork already contains its title.
 
 Duties:
+- Center the heading with warm serif typography and subtle divider lines.
 - Show four images:
   Duty 1
   Duty 2
@@ -89,6 +92,7 @@ Duties:
 - Phone: stack vertically
 
 Chore Information:
+- Center the heading with warm serif typography and subtle divider lines.
 - Show four images:
   Rewards
   Punishments
@@ -99,9 +103,8 @@ Chore Information:
 
 Additional Chores:
 - Do NOT use an image/sign.
-- Use text and a clickable button/link:
-  ADDITIONAL CHORES
-  VIEW ADDITIONAL CHORES
+- Use one centered clickable button labeled Additional Chores.
+- Do not add a separate heading repeating the button label.
 - This opens additional-chores.pdf.
 
 GRAB & GO PAGE:
@@ -184,9 +187,9 @@ CURRENT WEBSITE IMAGE LIST:
 17. Garage Shared Spaces Expectations
 18. Patio Shared Spaces Expectations
 19. Living Room Shared Spaces Expectations
+20. Monthly Chore Calendar
 
 PDFs/resources:
-- chore-calendar.pdf
 - additional-chores.pdf
 - future How-To PDFs
 - Google Food Inventory link
@@ -194,7 +197,7 @@ PDFs/resources:
 
 IMPORTANT WORKFLOW:
 - Keep stable filenames for recurring replacement files.
-- I want to be able to replace the monthly food calendar image and monthly chore calendar PDF without rewriting HTML.
+- I want to be able to replace both monthly calendar images without rewriting HTML.
 - Do not build complicated features that require maintenance.
 - Keep the site simple enough for family use on a 15-inch kitchen command-center display and on phones.
 
@@ -204,11 +207,11 @@ The project blueprint was saved and confirmed before website building began. The
 
 ## Current State
 
-The website is plain HTML, CSS, and small JavaScript files under `site/`, with no framework, package dependencies, or build step. The seven HTML pages share `site/assets/styles.css`, `site/assets/site.js`, and `site/assets/resources.js`. GitHub Pages publication is prepared in `.github/workflows/pages.yml`. The target repository is `https://github.com/angelicajones-web/FAMILY_HOME_HUB`, with default branch `main`; publication needs GitHub Pages enabled in repository settings. Keep the simple static structure.
+The website is plain HTML, CSS, and small JavaScript files under `FAMILY_HOME_HUB/`, with no framework, package dependencies, or build step. The seven HTML pages share `FAMILY_HOME_HUB/assets/styles.css`, `FAMILY_HOME_HUB/assets/site.js`, and `FAMILY_HOME_HUB/assets/resources.js`. GitHub Pages publication is prepared in `.github/workflows/pages.yml`. The target repository is `https://github.com/angelicajones-web/FAMILY_HOME_HUB`, with default branch `main`; publication needs GitHub Pages enabled in repository settings. Keep the simple static structure.
 
-The user approved placeholders for the first version. The 19 image files and two PDFs in `site/assets/` are clearly labeled preview assets. Replace them with supplied finished assets at their stable paths; do not invent family photos, calendar entries, menu items, chores, or household rules. Missing Google and How-To links live in `site/assets/resources.js` and show a coming-soon message until provided.
+The user approved placeholders for the first version and has since supplied the laundry, duties, chore-information, menu, and shared-space artwork. Preserve these finished assets. The family photo, food calendar, monthly chore calendar, and Additional Chores PDF remain labeled placeholders. The user explicitly requested a calendar image placeholder and monthly image replacements. Do not substitute a discovered calendar without their instruction. Do not invent family photos, calendar entries, menu items, chores, or household rules. Missing Google and How-To links live in `FAMILY_HOME_HUB/assets/resources.js` and show a coming-soon message until provided. The old `chore-calendar.pdf` placeholder is unused.
 
-Use `work/` for scratch files and intermediate assets. Keep delivered website files in `site/`. Do not rerun the initial page-authoring helper over edited HTML. The optional preview server is `scripts/serve.mjs`; its local URL is `http://127.0.0.1:4173`.
+Use `work/` for scratch files and intermediate assets. Keep delivered website files in `FAMILY_HOME_HUB/`. Do not rerun the initial page-authoring helper over edited HTML. The optional preview server is `scripts/serve.mjs`; its local URL is `http://127.0.0.1:4173`.
 
 ## Working Practices
 
@@ -225,3 +228,9 @@ No build or lint workflow is needed. Check changed JavaScript with `node --check
 ## Environment
 
 The workspace is on Windows and uses PowerShell. Use shell commands and paths compatible with that environment. Git and Node are available through the bundled runtime but were not found on PATH. The bundled Git executable is `C:\Users\gel22\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe`. Do not edit Git metadata directly.
+
+## Current folder and user workflow
+
+- The user renamed the website folder from `site` to `FAMILY_HOME_HUB`. Preserve this exact directory name, including case, and keep preview and publishing paths consistent with it.
+- The user is organizing and renaming folders/files before continuing publication. Guide them one step at a time; they prefer to perform renaming themselves.
+- No website release has been uploaded or published yet. The remote main branch contains the initial README; the full placeholder website commit remains local after the Git push could not authenticate. Continue organizing before any further upload or publishing.
