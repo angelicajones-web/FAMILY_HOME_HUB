@@ -58,6 +58,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 .button-secondary { background: transparent; color: var(--ink); }
 .resource-message { font-size: .9375rem; color: var(--muted); margin-top: .8rem; max-width: 32rem; }
 .chores-page .page-heading { text-align: center; }
+.chores-page .document-grid { align-items: start; }
 .chores-page .chore-section-heading { display: flex; align-items: center; justify-content: center; gap: clamp(.75rem, 3vw, 2rem); margin-bottom: 1.75rem; color: var(--accent); font-style: italic; text-align: center; letter-spacing: -.015em; }
 .chores-page .chore-section-heading::before, .chores-page .chore-section-heading::after { content: ""; flex: 1; max-width: 9rem; min-width: 1rem; height: 1px; background: var(--line); }
 .chores-page .additional-chores { border-top: 1px solid var(--line); padding-top: 2.5rem; text-align: center; }
