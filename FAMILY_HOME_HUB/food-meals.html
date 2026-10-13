@@ -6,9 +6,9 @@
   <meta name="description" content="Jazz&#x27;s food calendar and our family&#x27;s food inventory.">
   <title>Food &amp; Meals | Family Home Hub</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=hub-headings">
-  <script src="assets/resources.js" defer></script>
-  <script src="assets/site.js" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=split-inventory">
+  <script src="assets/resources.js?v=split-inventory" defer></script>
+  <script src="assets/site.js?v=split-inventory" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -23,7 +23,10 @@
     <figure class="document-image"><img src="assets/images/jazz-food-calendar.png" alt="Jazz&#x27;s Food Calendar" width="1600" height="1200" loading="lazy"></figure>
     <section class="callout" aria-labelledby="inventory-title">
       <div><h2 id="inventory-title" class="section-title"><span>FOOD INVENTORY</span></h2><p>Check what we have<br>and what we need.</p></div>
-      <div><a class="button" href="#" data-resource="foodInventory">OPEN INVENTORY</a><p class="resource-message" role="status" hidden>The food inventory link is coming soon.</p></div>
+      <div class="inventory-actions">
+        <div class="resource-item"><a class="button" href="#" data-resource="meatInventory">MEAT INVENTORY</a><p class="resource-message" role="status" hidden>The Meat Inventory link is coming soon.</p></div>
+        <div class="resource-item"><a class="button" href="#" data-resource="sidesInventory">SIDES INVENTORY</a><p class="resource-message" role="status" hidden>The Sides Inventory link is coming soon.</p></div>
+      </div>
     </section>
   </main>
 </body>

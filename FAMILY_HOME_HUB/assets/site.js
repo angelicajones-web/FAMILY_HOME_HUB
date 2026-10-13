@@ -32,7 +32,7 @@ document.querySelectorAll('[data-resource]').forEach((link) => {
   }
   link.addEventListener('click', (event) => {
     event.preventDefault();
-    const container = link.closest('li, .callout');
+    const container = link.closest('.resource-item, li, .callout');
     const message = container?.querySelector('.resource-message');
     if (message) message.hidden = false;
   });
