@@ -54,7 +54,7 @@ FOOD & MEALS PAGE:
 - Include two clickable buttons:
   MEAT INVENTORY
   SIDES INVENTORY
-- Each opens its own inventory resource. Keep the two links empty and show a separate coming-soon message until the user supplies the URLs.
+- Each opens its own inventory resource. Meat Inventory is connected to the user-supplied Google Sheet. Keep Sides Inventory empty and show its coming-soon message until the user supplies its URL.
 - Do not show a combined Open Inventory button or a Grab & Go inventory button on this page. Grab & Go keeps its own Have/Need link.
 
 Previous combined Food Inventory categories (reference only; the user is preparing separate Meat and Sides inventories):
@@ -214,7 +214,7 @@ The project blueprint was saved and confirmed before website building began. The
 
 The website is plain HTML, CSS, and small JavaScript files under `FAMILY_HOME_HUB/`, with no framework, package dependencies, or build step. The seven HTML pages share `FAMILY_HOME_HUB/assets/styles.css`, `FAMILY_HOME_HUB/assets/site.js`, and `FAMILY_HOME_HUB/assets/resources.js`. GitHub Pages publication is prepared in `.github/workflows/pages.yml`. The target repository is `https://github.com/angelicajones-web/FAMILY_HOME_HUB`, with default branch `main`; publication needs GitHub Pages enabled in repository settings. Keep the simple static structure.
 
-The user approved placeholders for the first version and has since supplied the family photo, food calendar, monthly chore calendar, laundry, duties, chore-information, menu, and shared-space artwork. Preserve these finished assets. The Additional Chores PDF remains a labeled placeholder. The monthly chore calendar uses image replacement at its stable path. Do not substitute a discovered calendar without the user's instruction. Do not invent family photos, calendar entries, menu items, chores, or household rules. The Grab & Go Google Sheet is connected. The Meat Inventory and Sides Inventory links are awaiting URLs in `FAMILY_HOME_HUB/assets/resources.js`; unfinished How-To links show a coming-soon message until provided. The old `chore-calendar.pdf` placeholder is unused.
+The user approved placeholders for the first version and has since supplied the family photo, food calendar, monthly chore calendar, laundry, duties, chore-information, menu, and shared-space artwork. Preserve these finished assets. The Additional Chores PDF remains a labeled placeholder. The monthly chore calendar uses image replacement at its stable path. Do not substitute a discovered calendar without the user's instruction. Do not invent family photos, calendar entries, menu items, chores, or household rules. The Grab & Go Google Sheet is connected. Meat Inventory is connected and Sides Inventory is awaiting its URL in `FAMILY_HOME_HUB/assets/resources.js`; unfinished How-To links show a coming-soon message until provided. The old `chore-calendar.pdf` placeholder is unused.
 
 Use `work/` for scratch files and intermediate assets. Keep delivered website files in `FAMILY_HOME_HUB/`. Do not rerun the initial page-authoring helper over edited HTML. The optional preview server is `scripts/serve.mjs`; its local URL is `http://127.0.0.1:4173`.
 

@@ -2,7 +2,7 @@
 
 A simple, responsive family website for meals, chores, Grab & Go menus, household information, family instructions, and shared-space reminders. The seven pages follow the approved blueprint in `AGENTS.md`.
 
-The website is live at [Family Home Hub](https://angelicajones-web.github.io/FAMILY_HOME_HUB/). The family photo, food calendar, monthly chore calendar, laundry schedule, duties, chore information, menus, and shared-space posters use the family's supplied images. The Additional Chores PDF remains a labeled placeholder. The Grab & Go Google Sheet is connected. Food & Meals now has separate Meat Inventory and Sides Inventory buttons; each shows a coming-soon message until its new link is supplied. Future How-To guides also show a coming-soon message until their links are supplied.
+The website is live at [Family Home Hub](https://angelicajones-web.github.io/FAMILY_HOME_HUB/). The family photo, food calendar, monthly chore calendar, laundry schedule, duties, chore information, menus, and shared-space posters use the family's supplied images. The Additional Chores PDF remains a labeled placeholder. The Grab & Go Google Sheet is connected. Food & Meals has separate Meat Inventory and Sides Inventory buttons. Meat Inventory is connected; Sides Inventory shows a coming-soon message until its link is supplied. Future How-To guides also show a coming-soon message until their links are supplied.
 
 ## Project files
 
@@ -79,7 +79,7 @@ grabGoHaveNeed: 'https://docs.google.com/YOUR_HAVE_NEED_RESOURCE',
 
 Leave unavailable guides empty. How-To links support HTTPS URLs (including YouTube) and local PDF paths, such as `assets/documents/how-to-kool-aid.pdf`. Google sharing settings determine who can access the linked resources; the website does not change those permissions.
 
-Food & Meals uses separate Meat Inventory and Sides Inventory resources. Leave both links empty until the user supplies them. The old combined foodInventory URL is retained in resources.js for reference and is no longer used by that page. Grab & Go keeps its own Have/Need link.
+Food & Meals uses separate Meat Inventory and Sides Inventory resources. Meat Inventory is connected; leave Sides Inventory empty until the user supplies its link. The old combined foodInventory URL is retained in resources.js for reference and is no longer used by that page. Grab & Go keeps its own Have/Need link.
 
 ## Publish on GitHub Pages
 
