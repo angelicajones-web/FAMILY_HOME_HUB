@@ -2,7 +2,7 @@
 
 A simple, responsive family website for meals, chores, Grab & Go menus, household information, family instructions, and shared-space reminders. The seven pages follow the approved blueprint in `AGENTS.md`.
 
-The website is live at [Family Home Hub](https://angelicajones-web.github.io/FAMILY_HOME_HUB/). The family photo, food calendar, monthly chore calendar, laundry schedule, duties, chore information, menus, and shared-space posters use the family's supplied images. The Additional Chores PDF remains a labeled placeholder. The Grab & Go Google Sheet is connected. Food & Meals has separate Meat Inventory and Sides Inventory buttons. Meat Inventory is connected; Sides Inventory shows a coming-soon message until its link is supplied. Future How-To guides also show a coming-soon message until their links are supplied.
+The website is live at [Family Home Hub](https://angelicajones-web.github.io/FAMILY_HOME_HUB/). The family photo, food calendar, monthly chore calendar, laundry schedule, duties, chore information, menus, and shared-space posters use the family's supplied images. The Additional Chores button opens the user-supplied PDF. The Grab & Go Google Sheet is connected. Food & Meals has separate Meat Inventory and Sides Inventory buttons. Meat Inventory is connected; Sides Inventory shows a coming-soon message until its link is supplied. Future How-To guides also show a coming-soon message until their links are supplied.
 
 ## Project files
 
